@@ -1,0 +1,452 @@
+---
+---
+
+/**
+ * highlight tokens
+ * based on rougify command
+ * tokens list: https://github.com/jneen/rouge/wiki/List-of-tokens 
+ */
+
+ @charset "utf-8";
+
+ 
+ .highlight {
+   table {
+     td {
+       padding: 5px; 
+     }
+ 
+     pre { 
+       margin: 0; 
+     }
+   }
+ 
+   // Specially highlighted whitespace
+   .w {
+     color: #6272a4;
+   }
+ 
+   // Lexer errors
+   .err {
+     color: #f8f8f2;
+     background-color: #ff5555;
+   }
+ 
+   // Token for data not matched by a parser (e.g. HTML markup in PHP code)
+   .x {
+     color: #f8f8f2;
+   }
+ 
+   // Any keyword
+   .k {
+     font-weight: bold;
+     color: #ff79c6;
+   }
+ 
+   // Keywords that are constants
+   .kc {
+     font-weight: bold;
+     color: #ff79c6;
+   }
+ 
+   // Keywords used for variable declaration (e.g. var in javascript)
+   .kd {
+     font-weight: bold;
+     color: #ff79c6;
+   }
+ 
+   // Keywords used for namespace declarations
+   .kn {
+     font-weight: bold;
+     color: #ff79c6;
+   }
+ 
+   // Keywords that aren't really keywords
+   .kp {
+     font-weight: bold;
+     color: #ff79c6;
+   }
+ 
+   // Keywords which are reserved (such as end in Ruby)
+   .kr {
+     font-weight: bold;
+     color: #ff79c6;
+   }
+ 
+   // Keywords which refer to a type id (such as int in C)
+   .kt {
+     font-weight: bold;
+     color: #8be9fd;
+   }
+ 
+   // Variable/function names
+   .n {
+     color: #f8f8f2;
+   }
+ 
+   // Attributes (in HTML for instance)
+   .na {
+     color: #50fa7b;
+   }
+ 
+   // Builtin names which are available in the global namespace
+   .nb {
+     font-weight: bold;
+   }
+ 
+   // Builtin names that are implicit (such as self in Ruby)
+   .bp {
+     font-weight: bold;
+     color: #bd93f9;
+   }
+ 
+   // For class declaration
+   .nc {
+     font-weight: bold;
+     color: #bd93f9;
+   }
+ 
+   // For constants
+   .no {
+     font-weight: bold;
+     color: #bd93f9;
+   }
+ 
+   // For decorators in languages such as Python or Java
+   .nd {
+     font-weight: bold;
+     color: #bd93f9;
+   }
+ 
+   // Token for entities such as &nbsp; in HTML
+   .ni {
+     font-weight: bold;
+     color: #f1fa8c;
+   }
+ 
+   // Exceptions and errors (e.g. ArgumentError in Ruby)
+   .ne {
+     font-weight: bold;
+     color: #bd93f9;
+   }
+ 
+   // Function names
+   .nf {
+     color: #50fa7b;
+   }
+ 
+   // Token for properties
+   .py {
+     color: #50fa7b;
+   }
+ 
+   // For label names
+   .nl {
+     font-weight: bold;
+     color: #ff79c6;
+   }
+ 
+   // Token for namespaces
+   .nn {
+     font-weight: bold;
+     color: #bd93f9;
+   }
+ 
+   // For other names
+   .nx {
+     color: #f8f8f2;
+   }
+ 
+   // Tag mainly for markup such as XML or HTML
+   .nt {
+     font-weight: bold;
+     color: #ff79c6;
+   }
+ 
+   // Token for variables
+   .nv {
+     font-weight: bold;
+     color: #50fa7b;
+   }
+ 
+   // Token for class variables (e.g. @@var in Ruby)
+   .vc {
+     font-weight: bold;
+     color: #50fa7b;
+   }
+   
+   // For global variables (such as $LOAD_PATH in Ruby)
+   .vg {
+     font-weight: bold;
+     color: #50fa7b;
+   }
+ 
+   // Token for instance variables (such as @var in Ruby)
+   .vi {
+     font-weight: bold;
+     color: #50fa7b;
+   }
+ 
+   // Any literal (if not further defined)
+   .l {
+     color: #f8f8f2;
+   }
+ 
+   // Date literals
+   .ld {
+     font-weight: bold;
+     color: #f1fa8c;
+   }
+ 
+   // String literals
+   .s {
+     font-weight: bold;
+     color: #f1fa8c;
+   }
+ 
+   // String enclosed in backticks
+   .sb {
+     font-weight: bold;
+     color: #f1fa8c;
+   }
+ 
+   // Token type for single characters
+   .sc {
+     font-weight: bold;
+     color: #f1fa8c;
+   }
+ 
+   // Documentation strings (such as in Python)
+   .sd {
+     font-weight: bold;
+     color: #f1fa8c;
+   }
+ 
+   // Double quoted strings
+   .s2 {
+     font-weight: bold;
+     color: #f1fa8c;
+   }
+ 
+   // Escaped sequences in strings
+   .se {
+     font-weight: bold;
+     color: #f1fa8c;
+   }
+ 
+   // For "heredoc" strings (e.g. in Ruby)
+   .sh {
+     font-weight: bold;
+     color: #f1fa8c;
+   }
+   
+   // For interpolated part in strings (e.g. in Ruby)
+   .si {
+     font-weight: bold;
+     color: #f1fa8c;
+   }
+ 
+   // Token type for any other strings (for example %q{foo} string constructs in Ruby)
+   .sx {
+     font-weight: bold;
+     color: #f1fa8c;
+   }
+ 
+   // Regular expressions literals
+   .sr {
+     font-weight: bold;
+     color: #f1fa8c;
+   }
+ 
+   // Single quoted strings
+   .s1 {
+     font-weight: bold;
+     color: #f1fa8c;
+   }
+ 
+   // Symbols (such as :foo in Ruby)
+   .ss {
+     font-weight: bold;
+     color: #f1fa8c;
+   }
+ 
+   // Any number literal (if not further defined)
+   .m {
+     font-weight: bold;
+     color: #bd93f9;
+   }
+   
+   // Float numbers
+   .mf {
+     font-weight: bold;
+     color: #bd93f9;
+   }
+ 
+   // Hexadecimal numbers
+   .mh {
+     font-weight: bold;
+     color: #bd93f9;
+   }
+ 
+   // Integer literals
+   .mi {
+     font-weight: bold;
+     color: #bd93f9;
+   }
+ 
+   // Long integer literals
+   .il {
+     font-weight: bold;
+     color: #bd93f9;
+   }
+ 
+   // Octal literals
+   .mo {
+     font-weight: bold;
+     color: #bd93f9;
+   }
+ 
+   // Hexadecimal literals
+   .mx {
+     font-weight: bold;
+     color: #bd93f9;
+   }
+ 
+   // Binary literals
+   .mb {
+     font-weight: bold;
+     color: #bd93f9;
+   }
+ 
+   // Operators (commonly +, -, /, *)
+   .o {
+     font-weight: bold;
+     color: #ffb86c;
+   }
+ 
+   // Word operators (e.g. and)
+   .ow {
+     font-weight: bold;
+     color: #ffb86c;
+   }
+ 
+   // Punctuation which is not an operator
+   .p {
+     color: #f8f8f2;
+   }
+ 
+   // Single line comments
+   .c {
+     font-style: italic;
+     color: #6272a4;
+   }
+   
+   // Multiline comments
+   .cm {
+     font-style: italic;
+     color: #6272a4;
+   }
+ 
+   // Preprocessor comments such as <% %> in ERb
+   .cp {
+     font-style: italic;
+     font-weight: bold;
+     color: #ff5555;
+   }
+ 
+   // Comments that end at the end of the line
+   .c1 {
+     font-style: italic;
+     color: #6272a4;
+   }
+ 
+   // Special data in comments such as @license in Javadoc
+   .cs {
+     font-style: italic;
+     color: #6272a4;
+   }
+ 
+   // Unstyled token
+   .g {
+     color: #f8f8f2;
+   }
+ 
+   // Token value as deleted
+   .gd {
+     color: #ff5555;
+   }
+ 
+   // Token value as emphasized
+   .ge {
+     font-style: italic;
+   }
+ 
+   // Token value as an error message
+   .gr {
+     font-style: italic;
+     font-weight: bold;
+     color: #ff5555;
+   }
+ 
+   // Token value as a headline
+   .gh {
+     font-weight: bold;
+     color: #ff79c6;
+   }
+ 
+   // Token value as inserted
+   .gi {
+     color: #50fa7b;
+   }
+ 
+   // Marked as a program output
+   .go {
+     color: #6272a4;
+   }
+ 
+   // Marked as a command prompt
+   .gp {
+     font-weight: bold;
+     color: #2279a5;
+   }
+ 
+   // Mark the token value as bold (for rst lexer)
+   .gs {
+     font-weight: bold;
+   }
+ 
+   // Marked as a subheadline
+   .gu {
+     font-weight: bold;
+     color: #ff79c6;
+   }
+ 
+   // Mark the token as a part of an error traceback
+   .gt {
+     color: #f8f8f2;
+     background-color: #44475a;
+   }
+ 
+   // Line numbers
+   .gl {
+     color: #6272a4;
+   }
+ 
+   // Documentation comments
+   .cd {
+     font-style: italic;
+     color: #6272a4;
+   }
+   
+   // Keywords used for variable
+   .kv {
+     font-weight: bold;
+     color: #ff79c6;
+   }
+   
+   // Punctuation which is an indicator
+   .pi {
+     color: #f8f8f2;
+   }
+ }
+ 

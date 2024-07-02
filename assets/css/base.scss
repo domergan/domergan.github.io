@@ -1,0 +1,28 @@
+---
+---
+
+@charset "utf-8";
+
+@import
+  "reset",
+  "container",
+  "header",
+  "float",
+  "footer",
+  "page",
+  "post-list",
+  "post",
+  "category",
+  "highlighter",
+  "mobile",
+  "printer",
+  "task-list",
+  "mermaid"
+;
+
+// Added
+body {
+  color: white;
+  background-color: #4B4D5E;
+  font-style: normal;
+}
